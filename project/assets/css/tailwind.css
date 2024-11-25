@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Styles for Dark Theme */
+body {
+  @apply bg-gray-900 text-white;
+}
+
+header {
+  @apply bg-gray-800 text-white p-6 h-screen fixed flex flex-col w-64;
+}
+
+header h1 {
+  @apply text-xl font-bold text-center mb-4;
+}
+
+header nav a {
+  @apply hover:bg-gray-700 px-4 py-2 rounded block;
+}
+
+main {
+  @apply ml-64 p-6;
+}
+
+footer {
+  @apply text-center text-sm py-4 bg-gray-800 text-gray-400;
+}
+
+table {
+  @apply w-full mt-6 bg-gray-800 rounded shadow text-white;
+}
+
+table th {
+  @apply p-2 text-left border-b border-gray-700;
+}
+
+table td {
+  @apply p-2 border-b border-gray-700;
+}
+
+button {
+  @apply bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 text-white;
+}
+
+/* Custom Classes for Forms */
+input, select {
+  @apply w-full p-2 mb-4 border border-gray-700 rounded bg-gray-700 text-white;
+}
+
+input[type="submit"], button {
+  @apply bg-blue-600 w-full py-2 rounded hover:bg-blue-700;
+}
+
+/* ChartJS Wrapper */
+canvas {
+  @apply bg-gray-900 rounded;
+}
